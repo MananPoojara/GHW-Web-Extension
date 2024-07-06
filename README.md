@@ -1,7 +1,5 @@
 # Research Assistant Browser Extension
 
-![Extension Icon](icons/icon128.png)
-
 ## Overview
 
 The Research Assistant browser extension is designed to enhance your web surfing and research experience. It offers a variety of features to help you stay organized, focused, and efficient while browsing the internet.
