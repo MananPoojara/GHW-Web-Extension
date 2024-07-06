@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "Research Assistant",
+    "version": "1.0",
+    "description": "A browser extension to streamline your research.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "bookmarks",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "Popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
